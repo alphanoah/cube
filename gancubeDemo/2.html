@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" style="font-size: 100px;">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="telephone=no" name="format-detection">
+    <title>GAN Tutorials - 3x3 CFOP - GANCube</title>
+
+    <script src="./gancube/chtemp/js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="./gancube/chtemp/css/common.css?10">
+    <script src="./gancube/chtemp/js/common.js"></script>
+
+</head>
+<body>
+<div class="mainSidebar">
+    <header class="header"></header>
+</div>
+
+<div class="mainBody">
+    <div class="mainSidebarOccupy"></div>
+    <div class="mainContainer">
+
+        <div id="primary" class="content-area primary container woocommerce">
+
+
+            <main id="main" class="site-main">
+
+
+                <div class="style_page">
+                    <article
+                            class="post-11879 page type-page status-publish ast-article-single" id="post-11879"
+                            itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+
+
+                        <header class="entry-header ast-header-without-markup">
+
+
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content clear woocommerce-account"
+                             itemprop="text">
+
+
+                            <script type="text/javascript"
+                                    src="./gancube/chtemp/js/jquery-1.11.3.min.js"></script>
+                            <script src="./gancube/chtemp/static/CFOP/js/layer/layer.js"></script>
+                            <script src="./gancube/chtemp/static/CFOP/js/vue.min.js"></script>
+                            <link rel="stylesheet"
+                                  href="./gancube/chtemp/static/CFOP/css/common.css">
+                            <link rel="stylesheet"
+                                  href="./gancube/chtemp/static/CFOP/css/style.css?v=2">
+                            <link rel="stylesheet"
+                                  href="./gancube/chtemp/static/CFOP/css/adapt.css">
+                            <div class="courseTitle">
+                                <img src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/logo.png"
+                                     alt="" class="logo">
+                                <h1><span class="bigText">GANCUBE</span></h1>
+                                <div class="buy "><a download target="_blank"
+                                                     href="./gancube/chtemp/images/CFOP_ZH-EN.png"
+                                                     class="" rel="noopener noreferrer">Download</a></div>
+                            </div>
+                            <div class="moduleBox flex">
+                                <section class="section">
+                                    <div class="container row">
+                                        <div class="col-md-6 mt10">
+                                            <img src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img1.png"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-md-6 mt20">
+                                            <p>OLL and PLL is vertical view</p>
+                                            <p>OLL: The black bars and square represent the yellow pieces</p>
+                                            <p>PLL: The black bars represent the samecolored pieces</p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="section">
+                                    <div class="container">
+                                        <div class="exampleGrid2">
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img2.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img3.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img4.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img5.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img6.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img7.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img8.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img9.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img10.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img11.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img12.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img13.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img14.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img15.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img16.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img17.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img18.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img19.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img20.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img21.png"
+                                                        alt=""></div>
+                                            </div>
+                                            <div class="unit">
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img22.png"
+                                                        alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="module mt20">
+                                            <div class="exampleGrid exampleGrid3">
+                                                <div class="unit">
+                                                    <p class="">Lowercase: Turn 2 Layers,x, y, z: Whole rotation<br/>
+                                                        Letter+ &#8216;:Turn 90% counterclockwise<br/>
+                                                        Letter+2: Turn 180% clockwise<br/>
+                                                        Letter+&#8217;2: Turn 180% counterclockwise</p>
+                                                </div>
+                                                <div class="unit">
+                                                    <p class="">
+                                                        <span style="color: #0075CE;">Blue font: By left index finger</span><br/>
+                                                        <span style="color: #E50012;">Red font: By right thumb</span><br/>
+                                                        <span style="color: #EF8200;">Orange font:  By right ring finger</span>
+                                                    </p>
+                                                </div>
+                                                <div class="unit">
+                                                    <p class="">
+                                                        (): A series of movements<br/>
+                                                        ()+2: Repeat the same series of movements once. e.g<br/>
+                                                        (R U R&#8217; <span class="mainColor2">U&#8217;</span>)2=(RU R&#8217;
+                                                        <span class="mainColor2">U&#8217;</span>)(R U R&#8217; <span
+                                                            class="mainColor2">U&#8217;</span>)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="section">
+                                    <div class="container">
+                                        <div class="exampleGrid exampleGrid4 flex" id="First2LayerSticker">
+                                            <div class="firstUnit">
+                                                <div class="exampleText">
+                                                    <h2 class="fsize24 mainColor">F2L</h2>
+                                                    <p>First 2 Layers</p>
+                                                </div>
+                                            </div>
+                                            <div class="unit" data-index="0">
+                                                <div class="orderNum">01</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img28.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor2">U&#8217;</span>R&#8217;U)y'(R&#8217;U2R<span
+                                                        class="mainColor3">U&#8217;</span><span class="mainColor2">U&#8217;</span>)(R&#8217;UR)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="1">
+                                                <div class="orderNum">02</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img34.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(UR<span class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)y'(R&#8217;UR)</p>
+                                            </div>
+                                            <div class="unit" data-index="2">
+                                                <div class="orderNum">03</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img40.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R&#8217;<span class="mainColor3">F&#8217;</span>RU)(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;F)</p>
+                                            </div>
+                                            <div class="unit" data-index="3">
+                                                <div class="orderNum">04</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img46.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(RU2R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(RUR&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="4">
+                                                <div class="orderNum">05</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img52.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RF)U(R<span class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor3">F&#8217;</span>)(<span class="mainColor2">U&#8217;</span>R&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="5">
+                                                <div class="orderNum">06</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img58.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">y'(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>RU)(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R)</p>
+                                            </div>
+                                            <div class="unit" data-index="6">
+                                                <div class="orderNum">07</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img23.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor2">U&#8217;</span>R&#8217;U)(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="7">
+                                                <div class="orderNum">08</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img29.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor2">U&#8217;</span>R&#8217;U)(R<span
+                                                        class="mainColor3">U&#8217;</span><span class="mainColor2">U&#8217;</span>R&#8217;U)(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="8">
+                                                <div class="orderNum">09</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img35.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RU)F(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor3">F&#8217;</span>R&#8217;
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="9">
+                                                <div class="orderNum">10</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img41.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">y'(R&#8217;UR<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;UR)</p>
+                                            </div>
+                                            <div class="unit" data-index="10">
+                                                <div class="orderNum">11</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img47.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(RUR&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="11">
+                                                <div class="orderNum">12</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img53.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)2(RUR&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="12">
+                                                <div class="orderNum">13</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img59.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor2">U&#8217;</span>R&#8217;U)y'(R&#8217;UR)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="13">
+                                                <div class="orderNum">14</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img24.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">y'(R&#8217;U2)(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R)</p>
+                                            </div>
+                                            <div class="unit" data-index="14">
+                                                <div class="orderNum">15</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img30.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">y&#8217;<span class="mainColor2">U&#8217;</span>(R&#8217;U2)(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;UR)</p>
+                                            </div>
+                                            <div class="unit" data-index="15">
+                                                <div class="orderNum">16</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img36.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">y'(R&#8217;UR<span
+                                                        class="mainColor3">U&#8217;</span><span class="mainColor2">U&#8217;</span>)(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R)</p>
+                                            </div>
+                                            <div class="unit" data-index="16">
+                                                <div class="orderNum">17</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img42.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">FU(R<span class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor3">F&#8217;</span>)(R<span class="mainColor2">U&#8217;</span>R&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="17">
+                                                <div class="orderNum">18</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img48.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">U(R<span class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(R<span class="mainColor2">U&#8217;</span>R&#8217;U)(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="18">
+                                                <div class="orderNum">19</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img54.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor2">U&#8217;</span>R&#8217;U2)(RUR&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="19">
+                                                <div class="orderNum">20</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img60.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">U(R<span class="mainColor2">U&#8217;</span><span
+                                                        class="mainColor3">U&#8217;</span>)(R&#8217;UR<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="20">
+                                                <div class="orderNum">21</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img25.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>RUR&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="21">
+                                                <div class="orderNum">22</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img31.png"
+                                                        alt=""></div>
+                                                <p class="exampleText"><span class="mainColor2">U&#8217;</span>(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;U2)(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="22">
+                                                <div class="orderNum">23</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img37.png"
+                                                        alt=""></div>
+                                                <p class="exampleText"><span class="mainColor2">U&#8217;</span>(RUR&#8217;)y'(UR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R)</p>
+                                            </div>
+                                            <div class="unit" data-index="23">
+                                                <div class="orderNum">24</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img43.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">y&#8217;U(R&#8217;UR<span class="mainColor2">U&#8217;</span>)(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R)</p>
+                                            </div>
+                                            <div class="unit" data-index="24">
+                                                <div class="orderNum">25</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img49.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">y'(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R)</p>
+                                            </div>
+                                            <div class="unit" data-index="25">
+                                                <div class="orderNum">26</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img55.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">y&#8217;U(R&#8217;<span class="mainColor2">U&#8217;</span>R<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R)</p>
+                                            </div>
+                                            <div class="unit" data-index="26">
+                                                <div class="orderNum">27</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img61.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">y'(R<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;2<span
+                                                        class="mainColor2">U&#8217;</span>)(R2<span class="mainColor2">U&#8217;</span>R&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="27">
+                                                <div class="orderNum">28</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img26.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(lU)(r<span class="mainColor2">U&#8217;</span>r&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)l&#8217;</p>
+                                            </div>
+                                            <div class="unit" data-index="28">
+                                                <div class="orderNum">29</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img32.png"
+                                                        alt=""></div>
+                                                <p class="exampleText"><span class="mainColor2">U&#8217;</span>(R<span
+                                                        class="mainColor3">U&#8217;</span><span class="mainColor2">U&#8217;</span>)(R&#8217;U2)(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="29">
+                                                <div class="orderNum">30</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img38.png"
+                                                        alt=""></div>
+                                                <p class="exampleText"><span class="mainColor2">U&#8217;</span>(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(R<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="30">
+                                                <div class="orderNum">31</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img44.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">UR<span class="mainColor2">U&#8217;</span>R&#8217;
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="31">
+                                                <div class="orderNum">32</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img50.png"
+                                                        alt=""></div>
+                                                <p class="exampleText"><span class="mainColor2">U&#8217;</span>(R<span
+                                                        class="mainColor3">U&#8217;</span><span class="mainColor2">U&#8217;</span>R&#8217;U)(RUR&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="32">
+                                                <div class="orderNum">33</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img56.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">y&#8217;U(R&#8217;<span class="mainColor2">U&#8217;</span>R)<span
+                                                        class="mainColor">d&#8217;</span>(RUR&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="33">
+                                                <div class="orderNum">34</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img62.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">y&#8217;<span class="mainColor2">U&#8217;</span>(R&#8217;UR)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="34">
+                                                <div class="orderNum">35</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img27.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">y&#8217;U(R&#8217;<span class="mainColor2">U&#8217;</span>R<span
+                                                        class="mainColor3">U&#8217;</span><span><span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;UR)</p>
+                                            </div>
+                                            <div class="unit" data-index="35">
+                                                <div class="orderNum">36</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img33.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">y&#8217;U(R&#8217;U2R<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;UR)</p>
+                                            </div>
+                                            <div class="unit" data-index="36">
+                                                <div class="orderNum">37</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img39.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor2">U&#8217;</span>R&#8217;U2)y'(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R)</p>
+                                            </div>
+                                            <div class="unit" data-index="37">
+                                                <div class="orderNum">38</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img45.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor2">U&#8217;</span>R&#8217;U)(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;U2)(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="38">
+                                                <div class="orderNum">39</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img51.png"
+                                                        alt=""></div>
+                                                <p class="exampleText"><span class="mainColor2">U&#8217;</span>(RUR&#8217;U)(RUR&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="39">
+                                                <div class="orderNum">40</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img57.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="40">
+                                                <div class="orderNum">41</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img63.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">U'(R<span class="mainColor2">U&#8217;</span>R&#8217;U)(RUR&#8217;)
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="section">
+                                    <div class="container">
+                                        <div class="exampleGrid exampleGrid4 flex" id="orientationLayers">
+                                            <div class="firstUnit">
+                                                <div class="exampleText">
+                                                    <h2 class="fsize24 mainColor">OLL</h2>
+                                                    <p>Orientation of Last Layer</p>
+                                                </div>
+                                            </div>
+                                            <div class="unit" data-index="0">
+                                                <div class="orderNum">01</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img96.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;2FR<span
+                                                        class="mainColor3">F&#8217;</span>)U2(R&#8217;FR<span
+                                                        class="mainColor3">F&#8217;</span>)</p>
+                                            </div>
+                                            <div class="unit" data-index="1">
+                                                <div class="orderNum">02</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img102.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">F(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor3">F&#8217;</span>f(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor3">f&#8217;</span>
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="2">
+                                                <div class="orderNum">03</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img108.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">f(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor3">f&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>F(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor3">F&#8217;</span>
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="3">
+                                                <div class="orderNum">04</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img114.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">f(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor3">f&#8217;</span>UF(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor3">F&#8217;</span>
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="4">
+                                                <div class="orderNum">05</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img68.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(r&#8217;U2)(RUR&#8217;U)r</p>
+                                            </div>
+                                            <div class="unit" data-index="5">
+                                                <div class="orderNum">06</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img74.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(r<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R<span class="mainColor2">U&#8217;</span>r&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="6">
+                                                <div class="orderNum">07</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img80.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(rUR&#8217;U)(R<span
+                                                        class="mainColor3">U&#8217;</span><span class="mainColor2">U&#8217;</span>r&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="7">
+                                                <div class="orderNum">08</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img86.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(r&#8217;<span class="mainColor2">U&#8217;</span>R<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;U2r)</p>
+                                            </div>
+                                            <div class="unit" data-index="8">
+                                                <div class="orderNum">09</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img91.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;F)(R2UR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor3">F&#8217;</span>
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="9">
+                                                <div class="orderNum">10</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img64.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;<span class="mainColor">U</span>)(R&#8217;FR<span
+                                                        class="mainColor3">F&#8217;</span>)(R<span class="mainColor2">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="10">
+                                                <div class="orderNum">11</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img97.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(r&#8217;R2UR&#8217;U)(R<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;U)<span
+                                                        class="mainColor">M&#8217;</span></p>
+                                            </div>
+                                            <div class="unit" data-index="11">
+                                                <div class="orderNum">12</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img103.png"
+                                                        alt=""></div>
+                                                <p class="exampleText"><span
+                                                        class="mainColor">M&#8217;</span>(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R<span class="mainColor2">U&#8217;</span>)(R&#8217;U2R<span
+                                                        class="mainColor2">U&#8217;</span>)M</p>
+                                            </div>
+                                            <div class="unit" data-index="12">
+                                                <div class="orderNum">13</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img109.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">f(RU)(R2<span class="mainColor2">U&#8217;</span>)(R&#8217;UR<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor">f&#8217;</span>
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="13">
+                                                <div class="orderNum">14</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img115.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R&#8217;F)(RUR&#8217;<span class="mainColor3">F&#8217;</span>R)(F<span
+                                                        class="mainColor2">U&#8217;</span><span class="mainColor3">F&#8217;</span>)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="14">
+                                                <div class="orderNum">15</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img69.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(r&#8217;<span class="mainColor2">U&#8217;</span>r)(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>RU)(r&#8217;Ur)</p>
+                                            </div>
+                                            <div class="unit" data-index="15">
+                                                <div class="orderNum">16</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img75.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(rUr&#8217;)(RUR&#8217;<span class="mainColor2">U&#8217;</span>)(r<span
+                                                        class="mainColor2">U&#8217;</span><span class="mainColor">r&#8217;</span>)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="16">
+                                                <div class="orderNum">17</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img81.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(l<span class="mainColor2">U&#8217;</span>l&#8217;)f(R2BR&#8217;UR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span><span class="mainColor3">f&#8217;</span>)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="17">
+                                                <div class="orderNum">18</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img87.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(rUR&#8217;U)(R<span
+                                                        class="mainColor3">U&#8217;</span><span class="mainColor2">U&#8217;</span>r&#8217;)(r&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R<span class="mainColor2">U&#8217;</span>)(R&#8217;U2r)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="18">
+                                                <div class="orderNum">19</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img92.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(r&#8217;RU)(RUR&#8217;<span class="mainColor2">U&#8217;</span>r)(R&#8217;2FR<span
+                                                        class="mainColor3">F&#8217;</span>)</p>
+                                            </div>
+                                            <div class="unit" data-index="19">
+                                                <div class="orderNum">20</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img65.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(rUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor">M&#8217;2</span>U(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor">M&#8217;</span>
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="20">
+                                                <div class="orderNum">21</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img98.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(R<span class="mainColor2">U&#8217;</span>R&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="21">
+                                                <div class="orderNum">22</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img104.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;2<span
+                                                        class="mainColor2">U&#8217;</span>)(R2<span class="mainColor2">U&#8217;</span>)(R&#8217;2<span
+                                                        class="mainColor2">U&#8217;</span>)(<span class="mainColor3">U&#8217;</span>R)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="22">
+                                                <div class="orderNum">23</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img110.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R2<span
+                                                        class="mainColor">D&#8217;</span>)(R<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor">D</span>)(R<span
+                                                        class="mainColor3">U&#8217;</span><span class="mainColor2">U&#8217;</span>R)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="23">
+                                                <div class="orderNum">24</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img116.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(rUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(r&#8217;FR<span
+                                                        class="mainColor3">F&#8217;</span>)</p>
+                                            </div>
+                                            <div class="unit" data-index="24">
+                                                <div class="orderNum">25</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img70.png"
+                                                        alt=""></div>
+                                                <p class="exampleText"><span class="mainColor3">F&#8217;</span>(rUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(r&#8217;FR)</p>
+                                            </div>
+                                            <div class="unit" data-index="25">
+                                                <div class="orderNum">26</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img76.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R<span class="mainColor2">U&#8217;</span>R&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="26">
+                                                <div class="orderNum">27</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img82.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;<span
+                                                        class="mainColor">U</span>)(R<span
+                                                        class="mainColor3">U&#8217;</span><span class="mainColor2">U&#8217;</span>R&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="27">
+                                                <div class="orderNum">28</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img88.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(rUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(r&#8217;RU)(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="28">
+                                                <div class="orderNum">29</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img93.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(R<span class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor3">F&#8217;</span><span class="mainColor2">U&#8217;</span>F)(RUR&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="29">
+                                                <div class="orderNum">30</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img66.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">f(RU)(R2<span class="mainColor2">U&#8217;</span>R&#8217;U)(R2<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;)<span
+                                                        class="mainColor3">f&#8217;</span></p>
+                                            </div>
+                                            <div class="unit" data-index="30">
+                                                <div class="orderNum">31</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img99.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(r&#8217;<span
+                                                        class="mainColor3">F&#8217;UF</span>)(r<span class="mainColor2">U&#8217;</span>r&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>r)</p>
+                                            </div>
+                                            <div class="unit" data-index="31">
+                                                <div class="orderNum">32</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img105.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RU)(<span
+                                                        class="mainColor3">B&#8217;</span><span class="mainColor2">U&#8217;</span>)(R&#8217;URBR&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="32">
+                                                <div class="orderNum">33</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img111.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;FR<span
+                                                        class="mainColor3">F&#8217;</span>)</p>
+                                            </div>
+                                            <div class="unit" data-index="33">
+                                                <div class="orderNum">34</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img117.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR2<span class="mainColor2">U&#8217;</span>)(R&#8217;F)(RUR<span
+                                                        class="mainColor2">U&#8217;</span><span class="mainColor">F&#8217;</span>)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="34">
+                                                <div class="orderNum">35</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img71.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;2FR<span
+                                                        class="mainColor3">F&#8217;</span>)(R<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="35">
+                                                <div class="orderNum">36</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img77.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R&#8217;<span class="mainColor2">U&#8217;</span>R<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;URU)(l<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;U)</p>
+                                            </div>
+                                            <div class="unit" data-index="36">
+                                                <div class="orderNum">37</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img83.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">F(R<span class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(RUR&#8217;<span
+                                                        class="mainColor3">F&#8217;</span>)</p>
+                                            </div>
+                                            <div class="unit" data-index="37">
+                                                <div class="orderNum">38</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img89.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;U)(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;FR<span
+                                                        class="mainColor3">F&#8217;</span>)</p>
+                                            </div>
+                                            <div class="unit" data-index="38">
+                                                <div class="orderNum">39</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img94.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;<span
+                                                        class="mainColor3">F&#8217;</span><span class="mainColor2">U&#8217;</span>F)U(RU2R&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="39">
+                                                <div class="orderNum">40</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img94_2.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R&#8217;F)(RUR&#8217;<span class="mainColor2">U&#8217;</span>)<span
+                                                        class="mainColor3">F&#8217;</span>(UR)</p>
+                                            </div>
+                                            <div class="unit" data-index="40">
+                                                <div class="orderNum">41</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img100.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;<span
+                                                        class="mainColor">U</span>)(R<span
+                                                        class="mainColor3">U&#8217;</span><span class="mainColor2">U&#8217;</span>R&#8217;)F(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor3">F&#8217;</span>
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="41">
+                                                <div class="orderNum">42</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img106.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R&#8217;<span class="mainColor2">U&#8217;</span>R<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;U2R)F(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor3">F&#8217;</span>
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="42">
+                                                <div class="orderNum">43</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img112.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(<span class="mainColor3">B&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;URB)</p>
+                                            </div>
+                                            <div class="unit" data-index="43">
+                                                <div class="orderNum">44</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img118.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">f(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor3">f&#8217;</span>
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="44">
+                                                <div class="orderNum">45</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img72.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">F(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor3">F&#8217;</span>
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="45">
+                                                <div class="orderNum">46</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img78.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R&#8217;<span class="mainColor2">U&#8217;</span>)(R&#8217;FR<span
+                                                        class="mainColor3">F&#8217;</span>)(U R)</p>
+                                            </div>
+                                            <div class="unit" data-index="46">
+                                                <div class="orderNum">47</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img84.png"
+                                                        alt=""></div>
+                                                <p class="exampleText"><span class="mainColor3">b&#8217;</span>(<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;UR)2b</p>
+                                            </div>
+                                            <div class="unit" data-index="47">
+                                                <div class="orderNum">48</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img90.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">F(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)2<span class="mainColor3">F&#8217;</span>
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="48">
+                                                <div class="orderNum">49</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img95.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor3">B&#8217;</span>)(R&#8217;2FR2B)(R&#8217;2<span
+                                                        class="mainColor3">F&#8217;</span>R)</p>
+                                            </div>
+                                            <div class="unit" data-index="49">
+                                                <div class="orderNum">50</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img95_2.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(r&#8217;U)(r2<span
+                                                        class="mainColor2">U&#8217;</span>r&#8217;2<span
+                                                        class="mainColor2">U&#8217;</span>)(r2Ur&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="50">
+                                                <div class="orderNum">51</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img101.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">f(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)2<span class="mainColor3">f&#8217;</span>
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="51">
+                                                <div class="orderNum">52</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img107.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R&#8217;<span class="mainColor3">F&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>F<span class="mainColor2">U&#8217;</span>)(RUR&#8217;<span
+                                                        class="mainColor">U</span>R)</p>
+                                            </div>
+                                            <div class="unit" data-index="52">
+                                                <div class="orderNum">53</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img113.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(r&#8217;U2)(RUR&#8217;<span class="mainColor2">U&#8217;</span>)(RUR&#8217;Ur)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="53">
+                                                <div class="orderNum">54</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img119.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(r<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>RU)(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R<span class="mainColor2">U&#8217;</span>r&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="54">
+                                                <div class="orderNum">55</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img73.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(r<span class="mainColor3">U&#8217;</span><span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(r&#8217;R2UR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(r<span class="mainColor2">U&#8217;</span>r&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="55">
+                                                <div class="orderNum">56</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img79.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(rUr&#8217;)(UR<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;)2(r<span
+                                                        class="mainColor2">U&#8217;</span>r&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="56">
+                                                <div class="orderNum">57</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img85.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)<span class="mainColor">M&#8217;</span>(UR<span
+                                                        class="mainColor2">U&#8217;</span>r&#8217;)</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="section">
+                                    <div class="container">
+                                        <div class="exampleGrid exampleGrid4 flex" id="permutationLayers">
+                                            <div class="firstUnit">
+                                                <div class="exampleText">
+                                                    <h2 class="fsize24 mainColor">PLL</h2>
+                                                    <p>Permutation of Last Layer</p>
+                                                </div>
+                                            </div>
+                                            <div class="unit" data-index="0">
+                                                <div class="orderNum">01</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img125.png"
+                                                        alt=""></div>
+                                                <p class="exampleText"><span class="mainColor">M&#8217;2</span>U<span
+                                                        class="mainColor">M</span>U2<span
+                                                        class="mainColor">M&#8217;</span>U<span class="mainColor">M&#8217;2</span><br/><span
+                                                        style="color: #00A650;">或 OR</span><br/>(R<span
+                                                        class="mainColor2">U&#8217;</span>R)(UR)2(<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;2)</p>
+                                            </div>
+                                            <div class="unit" data-index="1">
+                                                <div class="orderNum">02</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img131.png"
+                                                        alt=""></div>
+                                                <p class="exampleText"><span class="mainColor">M&#8217;2</span> <span
+                                                        class="mainColor2">U&#8217;</span><span
+                                                        class="mainColor">M</span> U2<span
+                                                        class="mainColor">M&#8217;</span><span class="mainColor2">U&#8217;</span><span
+                                                        class="mainColor">M&#8217;2</span><br/><span
+                                                        style="color: #00A650;">或 OR</span><br/>(R2
+                                                    U)(RU)(R&#8217;<span class="mainColor2">U&#8217;</span>)2(R&#8217;UR&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="2">
+                                                <div class="orderNum">03</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img136.png"
+                                                        alt=""></div>
+                                                <p class="exampleText"><span class="mainColor">M&#8217;2</span>U<span
+                                                        class="mainColor">M&#8217;2</span>U2<span class="mainColor">M&#8217;2</span>U<span
+                                                        class="mainColor">M&#8217;2</span></p>
+                                            </div>
+                                            <div class="unit" data-index="3">
+                                                <div class="orderNum">04</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img120.png"
+                                                        alt=""></div>
+                                                <p class="exampleText"><span class="mainColor">M&#8217;</span>U(<span
+                                                        class="mainColor">M&#8217;2</span>U)2<span class="mainColor">M&#8217;</span>U2<span
+                                                        class="mainColor">M&#8217;2</span><span class="mainColor2">U&#8217;</span>
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="4">
+                                                <div class="orderNum">05</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img126.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">x&#8217;R2<span class="mainColor">D2</span>(R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>R)<span
+                                                        class="mainColor">D2</span>(R&#8217;UR&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="5">
+                                                <div class="orderNum">06</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img132.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">x'(R<span
+                                                        class="mainColor2">U&#8217;</span>R)<span
+                                                        class="mainColor">D2</span>(R&#8217;UR)<span class="mainColor">D2</span>R&#8217;2
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="6">
+                                                <div class="orderNum">07</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img137.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">x'(R<span class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor">D</span>)(RUR&#8217;<span class="mainColor">D&#8217;</span>)(RUR&#8217;<span
+                                                        class="mainColor">D</span>)(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor">D&#8217;</span>)</p>
+                                            </div>
+                                            <div class="unit" data-index="7">
+                                                <div class="orderNum">08</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img121.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;F)(R2<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(RUR&#8217;<span
+                                                        class="mainColor3">F&#8217;</span>)</p>
+                                            </div>
+                                            <div class="unit" data-index="8">
+                                                <div class="orderNum">09</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img127.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R&#8217;<span class="mainColor2">U&#8217;</span><span
+                                                        class="mainColor3">F&#8217;</span>)(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;F)(R2<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(RUR&#8217;UR)</p>
+                                            </div>
+                                            <div class="unit" data-index="9">
+                                                <div class="orderNum">10</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img133.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R&#8217;UR&#8217;d&#8217;)(R&#8217;<span
+                                                        class="mainColor3">F&#8217;</span>R2<span class="mainColor2">U&#8217;</span>)(R&#8217;UR&#8217;FRF)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="10">
+                                                <div class="orderNum">11</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img138.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">F(R<span class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(RUR&#8217;<span
+                                                        class="mainColor3">F&#8217;</span>)(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;FR<span
+                                                        class="mainColor3">F&#8217;</span>)</p>
+                                            </div>
+                                            <div class="unit" data-index="11">
+                                                <div class="orderNum">12</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img122.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">z(<span class="mainColor2">U&#8217;</span>R<span
+                                                        class="mainColor">D&#8217;</span>)(R2UR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(R2U)(<span
+                                                        class="mainColor">D</span>R&#8217;)</p>
+                                            </div>
+                                            <div class="unit" data-index="12">
+                                                <div class="orderNum">13</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img128.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;<span
+                                                        class="mainColor2">F&#8217;</span>)(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;F)(R2<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)</p>
+                                            </div>
+                                            <div class="unit" data-index="13">
+                                                <div class="orderNum">14</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img134.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R&#8217;U2)(R<span
+                                                        class="mainColor3">U&#8217;</span><span class="mainColor2">U&#8217;</span>)(R&#8217;FRUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;<span
+                                                        class="mainColor3">F&#8217;</span>R2<span class="mainColor2">U&#8217;</span>)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="14">
+                                                <div class="orderNum">15</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img139.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R<span class="mainColor2">U&#8217;</span>R&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(RUR<span
+                                                        class="mainColor">D</span>)(R&#8217;<span class="mainColor2">U&#8217;</span>R<span
+                                                        class="mainColor">D&#8217;</span>)(R&#8217;U2R&#8217;U&#8217;)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="15">
+                                                <div class="orderNum">16</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img123.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R&#8217;2<span
+                                                        class="mainColor2">u&#8217;</span>R<span class="mainColor3">U&#8217;</span>R)(UR&#8217;u)(R2fR&#8217;<span
+                                                        class="mainColor3">f&#8217;</span>)</p>
+                                            </div>
+                                            <div class="unit" data-index="16">
+                                                <div class="orderNum">17</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img129.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;)y'(R2<span class="mainColor3">u&#8217;</span>R<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;UR&#8217;uR2)</p>
+                                            </div>
+                                            <div class="unit" data-index="17">
+                                                <div class="orderNum">18</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img135.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R2uR&#8217;)(UR&#8217;<span class="mainColor2">U&#8217;</span>R<span
+                                                        class="mainColor2">u&#8217;</span>)(R&#8217;2<span
+                                                        class="mainColor3">F&#8217;UF</span>)</p>
+                                            </div>
+                                            <div class="unit" data-index="18">
+                                                <div class="orderNum">19</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img140.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R&#8217;d&#8217;F)(R2u)(R&#8217;U)(R<span
+                                                        class="mainColor3">U&#8217;</span>R<span class="mainColor2">u&#8217;</span>R&#8217;2)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="19">
+                                                <div class="orderNum">20</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img124.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(R&#8217;UR<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;<span
+                                                        class="mainColor3">F&#8217;</span><span class="mainColor2">U&#8217;</span>)(FRUR&#8217;F)(R&#8217;<span
+                                                        class="mainColor3">F&#8217;</span>R<span class="mainColor2">U&#8217;</span>R)
+                                                </p>
+                                            </div>
+                                            <div class="unit" data-index="20">
+                                                <div class="orderNum">21</div>
+                                                <div class="exampleImg"><img
+                                                        src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img130.png"
+                                                        alt=""></div>
+                                                <p class="exampleText">(RUR&#8217;<span class="mainColor">U</span>)(RUR&#8217;<span
+                                                        class="mainColor2">F&#8217;</span>)(RUR&#8217;<span
+                                                        class="mainColor2">U&#8217;</span>)(R&#8217;F)(R2<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;U2)(R<span
+                                                        class="mainColor2">U&#8217;</span>R&#8217;)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="" style="display: none;" id="cubePop">
+                                <div class="cubeScene" id="cubeScene">
+                                    <div class="scene" id="scene">
+                                        <!-- <div class="scene" id="scene" @mousedown="mousedown" @touchStart="touchStart"> -->
+                                        <div class="pivot centered" id="pivot" :style="{transform:pivotMove}">
+                                            <div class="cube" id="cube">
+                                                <template v-for="piece in pieces">
+                                                    <div :class="'piece '+piece.className" :id="'piece' + piece.id"
+                                                         :style="{transform:piece.initTransform}">
+                                                        <div v-for="(face,index) in faces" :class="'element '+ face">
+                                                            <div v-if='stickerShow(index, piece)'
+                                                                 :class="'sticker ' + stickerClass(index, piece)">
+                                                                <!-- {{piece.i}} -->
+                                                                <!-- {{piece.id}} -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </template>
+                                            </div>
+                                        </div>
+                                        <div class="formulaCode">
+                                            {{ demoCode }}
+                                        </div>
+                                    </div>
+
+                                    <div class="formulaImg ">
+                                        <div class="orderNum">01</div>
+                                        <img src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/img28.png"
+                                             alt="">
+                                    </div>
+                                    <div class="runFormulaCode">
+                                        <div class="codeBox" :style="{textIndent: codeIndent}">
+                                            <span class="fCode"
+                                                  :style="{color: !(i == formula.length-1 &#038;&#038; stop) &#038;&#038; (i == (curFormula-1)) ? '#f00' : ''}"
+                                                  :index="i" v-for="(f,i) in formula">{{ f.letterStr }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="parts">
+                                        <input type="text" placeholder="Input your algorithm"
+                                               v-model.lazy.trim="formulaCode" @change="conversionFormula">
+                                        <input type="text" placeholder="300ms(Default Interval Time)"
+                                               :value="(intervalTime == 300) ? '' : intervalTime"
+                                               @change="setIntervalTime($event)">
+                                        <input type="range" :value="intervalTime" max="600" min="40" style="padding: 0;"
+                                               @change="setIntervalTime($event)">
+                                        <div class="buttonGroup flex">
+                                            <a href="javascript:;" class="buttonGroupBtn btn_prev"
+                                               @click="runScramblingCode('prev')"><img
+                                                    src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/icon/btn_prev.png"
+                                                    alt=""></a>
+                                            <a href="javascript:;" class="buttonGroupBtn btn_prev"
+                                               @click="stop ? runScramblingCode() : preventAnimate()"><img
+                                                    :src="'https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/icon/' + (stop ? 'paly' : 'pause') + '.png'"
+                                                    alt=""></a>
+                                            <a href="javascript:;" class="buttonGroupBtn btn_prev"
+                                               @click="demoStickerColor(prevStickerColor)"><img
+                                                    src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/icon/first.png"
+                                                    alt=""></a>
+                                            <a href="javascript:;" class="buttonGroupBtn btn_next"
+                                               @click="runScramblingCode('next')"><img
+                                                    src="https://www.gancube.com/wp-content/themes/Parallax-One-GANcube/CFOP/images/icon/btn_next.png"
+                                                    alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <link rel="stylesheet"
+                                  href="./gancube/chtemp/static/CFOP/css/cubeScene.css">
+                            <script src="./gancube/chtemp/static/CFOP/js/cubeSceneData.min.js"></script>
+                            <script src="./gancube/chtemp/static/CFOP/js/cubeScene.min.js"></script>
+                            <style>
+                                .cubePop {
+                                    max-width: 800px;
+                                }
+
+                                .cubePop:after {
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    z-index: 9;
+                                    right: 2em;
+                                    top: 1em;
+                                    width: 60px;
+                                    height: 70px;
+                                    background: url(./gancube/chtemp/static/images/logo.png);
+                                    background-repeat: no-repeat;
+                                    background-size: 100%;
+                                }
+
+                                .cubePop .cubeScene .formulaImg {
+                                    position: absolute;
+                                    z-index: 9;
+                                    left: 4em;
+                                    top: 2em;
+                                    width: 80px;
+                                    height: 80px;
+                                    text-align: center;
+                                }
+
+                                .cubePop .cubeScene .formulaImg .orderNum {
+                                    position: relative;
+                                    top: -5px;
+                                    font-size: 18px;
+                                    color: var(--mainColor);
+                                    font-weight: 700;
+                                    text-align: center;
+                                }
+
+                                .cubePop .cubeScene .formulaCode {
+                                    position: absolute;
+                                    bottom: 0.5em;
+                                    width: 100%;
+                                    text-align: center;
+                                    font-size: 1.8em;
+                                    line-height: 1;
+                                }
+
+                                .cubePop .cubeScene .runFormulaCode {
+                                    position: absolute;
+                                    top: 0.5em;
+                                    width: 100%;
+                                    height: 1.5em;
+                                    text-align: center;
+                                    font-size: 1.8em;
+                                    line-height: 1;
+                                }
+
+                                .cubePop .cubeScene .runFormulaCode .codeBox {
+                                    position: relative;
+                                    margin: 0 auto;
+                                    width: 50%;
+                                    height: 100%;
+                                    overflow: hidden;
+                                    word-break: normal;
+                                }
+
+                                .cubePop .cubeScene .runFormulaCode .codeBox .fCode {
+                                    margin: 4px;
+                                    width: 28px;
+                                }
+
+                                .cubePop .cubeScene .parts {
+                                    padding: 1em 1em 0;
+                                    position: absolute;
+                                    top: 10em;
+                                    left: 0em;
+                                    width: 220px;
+                                }
+
+                                .cubePop .cubeScene .parts input {
+                                    display: block;
+                                    width: 100%;
+                                    padding: 2px 8px;
+                                    margin-bottom: 1em;
+                                    background-color: #fff;
+                                    border: 1px solid #ddd;
+                                }
+
+                                .cubePop .cubeScene .parts input[type="button"] {
+                                    height: 30px;
+                                    color: #000;
+                                    background-color: #eee;
+                                }
+
+                                .cubePop .cubeScene .parts .buttonGroup .buttonGroupBtn {
+                                    width: 16%;
+                                }
+
+                                @media (max-width: 768px) {
+                                    .cube {
+                                        font-size: 140%;
+                                    }
+
+                                    .scene {
+                                        min-height: 330px;
+                                    }
+
+                                    .cubePop:after {
+                                        width: 50px;
+                                        top: 1.2em;
+                                        right: 1em;
+                                    }
+
+                                    .cubePop .cubeScene .parts {
+                                        display: block;
+                                        position: relative;
+                                        top: 0;
+                                        left: 0;
+                                        margin: 0 auto;
+                                        width: 280px;
+                                    }
+
+                                    .cubePop .cubeScene .formulaImg {
+                                        width: 60px;
+                                        left: 1em;
+                                        top: 1em;
+                                    }
+                                }
+                            </style>
+                            <script src="./gancube/chtemp/static/CFOP/js/CFOP.min.js"></script>
+
+
+                        </div><!-- .entry-content .clear -->
+
+
+                    </article><!-- #post-## -->
+                </div>
+
+
+            </main><!-- #main -->
+
+
+        </div><!-- #primary -->
+
+    </div>
+
+</div>
+
+<!-- TOP按钮 -->
+<div id="back-to-top" class="back-to-top"></div>
+
+
+
+</body>
+</html>

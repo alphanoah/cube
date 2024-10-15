@@ -1,0 +1,181 @@
+
+.centered, .cube .piece > .element > .sticker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.scene {
+    width: 100%;
+    /*height: 50%;*/
+    min-height: 400px;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative
+}
+
+.scene > .pivot {
+    width: 0;
+    height: 0;
+    -webkit-transition: .18s;
+    transition: .18s
+}
+
+.scene .anchor {
+    width: 2em;
+    height: 6em
+}
+
+.scene div {
+    position: absolute;
+    -webkit-transform-style: inherit;
+    transform-style: inherit;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+.cube .piece.centerPieces > .element > .sticker {
+    border-radius: 50%;
+}
+
+.centerPieces .sticker.white {
+    background-image: url("../images/5503852-1a449d501f0420bc.png");
+    background-size: cover;
+    -webkit-transform: rotate(180deg) !important;
+    transform: rotate(180deg) !important;
+}
+
+#piece1 > .element, #piece2 > .element, #piece4 > .element, #piece8 > .element, #piece16 > .element, #piece32 > .element, #pieceNaN > .element {
+    border: .05em solid #0a0a0a;
+    /*border-radius: 50%*/
+}
+
+.cube {
+    font-size: 190%;
+    margin-left: -1em;
+    margin-top: -1em
+}
+
+.cube .piece {
+    width: 1.9em;
+    height: 1.9em
+}
+
+.cube .piece > .element {
+    width: 100%;
+    height: 100%;
+    background: #0a0a0a;
+    border: .05em solid #0a0a0a;
+    /*border-radius: 10%*/
+}
+
+.cube .piece > .element.left {
+    -webkit-transform: rotateX(0deg) rotateY(-90deg) rotate(180deg) translateZ(1em);
+    transform: rotateX(0deg) rotateY(-90deg) rotate(180deg) translateZ(1em)
+}
+
+.cube .piece > .element.right {
+    -webkit-transform: rotateX(0deg) rotateY(90deg) rotate(90deg) translateZ(1em);
+    transform: rotateX(0deg) rotateY(90deg) rotate(90deg) translateZ(1em)
+}
+
+.cube .piece > .element.back {
+    -webkit-transform: rotateX(0deg) rotateY(180deg) rotate(-90deg) translateZ(1em);
+    transform: rotateX(0deg) rotateY(180deg) rotate(-90deg) translateZ(1em)
+}
+
+.cube .piece > .element.front {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotate(0deg) translateZ(1em);
+    transform: rotateX(0deg) rotateY(0deg) rotate(0deg) translateZ(1em)
+}
+
+.cube .piece > .element.bottom {
+    -webkit-transform: rotateX(-90deg) rotateY(0deg) rotate(-90deg) translateZ(1em);
+    transform: rotateX(-90deg) rotateY(0deg) rotate(-90deg) translateZ(1em)
+}
+
+.cube .piece > .element.top {
+    -webkit-transform: rotateX(90deg) rotateY(0deg) rotate(180deg) translateZ(1em);
+    transform: rotateX(90deg) rotateY(0deg) rotate(180deg) translateZ(1em)
+}
+
+.cube .piece.orient > .element.left > .sticker, .cube .piece.orient > .element.top > .sticker {
+    border-radius: 0 30% 30% 0;
+}
+
+.cube .piece.orient > .element.back > .sticker {
+    border-radius: 30% 0 0 30%;
+}
+
+.cube .piece.orient > .element.right > .sticker, .cube .piece.orient > .element.bottom > .sticker {
+    border-radius: 0 0 30% 30%;
+}
+
+.cube .piece.orient > .element.front > .sticker {
+    border-radius: 30% 30% 0 0;
+}
+
+.cube .piece.orient0 > .element.left > .sticker, .cube .piece.orient4 > .element.back > .sticker {
+    border-radius: 0 0 30% 30%;
+}
+
+.cube .piece.orient1 > .element.right > .sticker, .cube .piece.orient5 > .element.front > .sticker {
+    border-radius: 0 30% 30% 0;
+}
+
+.cube .piece.orient2 > .element.top > .sticker {
+    border-radius: 30% 30% 0 0;
+}
+
+.cube .piece.orient3 > .element.bottom > .sticker {
+    border-radius: 30% 0 0 30%;
+}
+
+.cube .piece.orientRev > .element > .sticker {
+    transform: rotate(180deg) translateZ(2px);
+}
+
+.cube .piece > .element > .sticker {
+    -webkit-transform: translateZ(2px);
+    transform: translateZ(2px);
+    width: 98%;
+    height: 98%;
+    border-radius: 10%;
+    -webkit-box-shadow: inset .05em .05em .2rem 0 hsla(0, 0%, 100%, .25), inset -.05em -.05em .2rem 0 rgba(0, 0, 0, .25);
+    box-shadow: inset .05em .05em .2rem 0 hsla(0, 0%, 100%, .25), inset -.05em -.05em .2rem 0 rgba(0, 0, 0, .25);
+    text-align: center;
+    color: #fff;
+}
+
+.cube .piece > .element > .sticker.blue {
+    background-color: #2f67dd
+}
+
+.cube .piece > .element > .sticker.green {
+    background-color: #3ccf44
+}
+
+.cube .piece > .element > .sticker.white {
+    background-color: #fafafa
+}
+
+.cube .piece > .element > .sticker.yellow {
+    background-color: #ffeb0a
+}
+
+.cube .piece > .element > .sticker.orange {
+    background-color: #ff8000
+}
+
+.cube .piece > .element > .sticker.red {
+    background-color: #e93e3e
+}
+
+.cube .piece > .element > .sticker.none {
+    background-color: #999
+}

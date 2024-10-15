@@ -1,0 +1,81 @@
+
+ul,ol,li{
+	list-style: none;
+}
+
+.flex{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex: 1 1 0;
+}
+.textCenter{
+	text-align: center;
+}
+.fsize16{
+	font-size: 16px !important;
+}
+.fsize20{
+	font-size: 20px !important;
+}
+.fsize24{
+	font-size: 24px !important;
+}
+.fsize22{
+	font-size: 22px !important;
+}
+.fsize40{
+	font-size: 40px !important;
+}
+.fsize52{
+	font-size: 52px !important;
+}
+
+.moduleBox{
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	/*font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;*/
+	font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: inherit;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	background: #0075cf;
+	color: #333;
+	font-size: 16px;
+	line-height: 1.6;
+	word-wrap: break-word;
+	word-break: break-word;
+}
+.moduleBox p,.moduleBox span{
+	padding: 0;
+	margin: 0;
+	color: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+.moduleBox h1, .moduleBox h2, .moduleBox h3, .moduleBox h4, .moduleBox h5{
+	margin: 0;
+	line-height: inherit;
+	color: inherit;
+}
+.moduleBox th,.moduleBox td,.moduleBox table{
+	border: none;
+}
+.moduleBox .module{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.moduleBox img{
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	vertical-align: top;
+}

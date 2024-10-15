@@ -1,0 +1,831 @@
+{
+  "cfop": {
+    "common": {
+      "desc": [
+        "魔方公式<br/>由代表方位的英文字母，数字以及单引号[‘]组成。<br/>Speed cube algorithms are represented by capital letters, numbers and single quotation marks[‘].",
+        "魔方的指法<br/>1.左拇指放在前面左层中块偏下，中指无名指放在后面左层中块和中块靠下方；<br/>2.右手两种拿法，一种是右拇指放在右层前面中块偏下，中指无名指依次放在右层后面中块下面，另一种是拇指放在右层底面中块，食指中指无名指依序放在右层上面。",
+        "<a href='https://www.gancube.com/zh/3x3x3-cfop-guide-of-gancube' target='_blank'>GAN魔方教程</a> <br/> <a href='https://www.cubeskills.com/tutorials/optimising-the-beginners-method' target='_blank'>cube skills</a>"
+      ],
+      "diagrams": {
+        "uppercase": {
+          "desc": [
+            "大写字母：顺时针转90度",
+            "Uppercase: Turn 90% clockwise",
+            "右，左，上，下，前，后 Right, Left, Up, Down, Front, Back."
+          ],
+          "images": [
+            "src/assets/images/intro/img2.png",
+            "src/assets/images/intro/img3.png",
+            "src/assets/images/intro/img4.png",
+            "src/assets/images/intro/img5.png",
+            "src/assets/images/intro/img6.png",
+            "src/assets/images/intro/img7.png"
+          ]
+        },
+        "singleQuotationMarks": {
+          "desc": [
+            "字母加’：逆时针90度转动",
+            "Letter + ‘:Turn 90% counterclockwise"
+          ],
+          "images": [
+            "src/assets/images/intro/img8.png"
+          ]
+        },
+        "lowercase": {
+          "desc": [
+            "小写字母：双层转",
+            "Lowercase: Turn 2 Layers"
+          ],
+          "images": [
+            "src/assets/images/intro/img9.png",
+            "src/assets/images/intro/img10.png",
+            "src/assets/images/intro/img11.png",
+            "src/assets/images/intro/img12.png",
+            "src/assets/images/intro/img13.png",
+            "src/assets/images/intro/img14.png"
+          ]
+        },
+        "double": {
+          "desc": [
+            "字母加2：顺时针180度转动，字母加’2：逆时针180度转动",
+            "Letter+2: Turn 180% clockwise, Letter+’2: Turn 180% counterclockwise"
+          ],
+          "images": [
+            "src/assets/images/intro/img15.png",
+            "src/assets/images/intro/img22.png"
+          ]
+        },
+        "wholeRotation": {
+          "desc": [
+            "x y z：整体转动",
+            "x, y, z: Whole rotation"
+          ],
+          "images": [
+            "src/assets/images/intro/img19.png",
+            "src/assets/images/intro/img20.png",
+            "src/assets/images/intro/img21.png"
+          ]
+        },
+        "middleLayer": {
+          "desc": [
+            "M：夹层90度转，可用食指拨动或无名指反推",
+            "M: the movement of middle layer.It could be done by either index finger or ring finger pushing",
+            "M’用无名指拨动 M’could be done by ring finger move"
+          ],
+          "images": [
+            "src/assets/images/intro/img16.png",
+            "src/assets/images/intro/img17.png",
+            "src/assets/images/intro/img18.png"
+          ]
+        }
+      },
+      "fingering": "拨动指法：<br/><span style=\"color: #0075CE;\">蓝：左食指(left index finger)</span><br/> <span style=\"color: #E50012;\">红：右拇指(right thumb finger)</span><br/> <span style=\"color: #EF8200;\">橙：无名指(right ring finger)</span>"
+    },
+    "f2l": {
+      "name": "First 2 Layers",
+      "abbr": "F2L",
+      "desc": [
+        "括号：一组连贯手法和分组记忆(A series of movements)",
+        "括号外加2：括号里步骤重复1次(Repeat the same series of movements once)"
+      ],
+      "formula": [
+        {
+          "id": 1,
+          "text": "(RU’R’U)y'(R’U2RU’U’)(R’UR)",
+          "html": "(R<span class=\"mainColor2\">U’</span>R’U)y'(R’U2R<span  class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>)(R’UR)",
+          "image": "src/assets/images/f2l/img28.png"
+        },
+        {
+          "id": 2,
+          "text": "(URU’R’U’)y'(R’UR)",
+          "html": "(UR<span class=\"mainColor2\">U’</span>R’<span  class=\"mainColor2\">U’</span>)y'(R’UR)",
+          "image": "src/assets/images/f2l/img34.png"
+        },
+        {
+          "id": 3,
+          "text": "(R’F’RU)(RU’R’F)",
+          "html": "(R’<span class=\"mainColor3\">F’</span>RU)(R<span class=\"mainColor2\">U’</span>R’F)",
+          "image": "src/assets/images/f2l/img40.png"
+        },
+        {
+          "id": 4,
+          "text": "(RUR’U’)(RU2R’U’)(RUR’)",
+          "html": "(RUR’<span class=\"mainColor2\">U’</span>)(RU2R’<span class=\"mainColor2\">U’</span>)(RUR’)",
+          "image": "src/assets/images/f2l/img46.png"
+        },
+        {
+          "id": 5,
+          "text": "(RF)U(RU’R’F’)(U’R’)",
+          "html": "(RF)U(R<span class=\"mainColor2\">U’</span>R’<span class=\"mainColor3\">F’</span>)(<span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/f2l/img52.png"
+        },
+        {
+          "id": 6,
+          "text": "y'(R’U’RU)(R’U’R)",
+          "html": "y'(R’<span class=\"mainColor2\">U’</span>RU)(R’<span  class=\"mainColor2\">U’</span>R)",
+          "image": "src/assets/images/f2l/img58.png"
+        },
+        {
+          "id": 7,
+          "text": "(RU’R’U)(RU’R’)",
+          "html": "(R<span class=\"mainColor2\">U’</span>R’U)(R<span  class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/f2l/img23.png"
+        },
+        {
+          "id": 8,
+          "text": "(RU’R’U)(RU’U’R’U)(RU’R’)",
+          "html": "(R<span class=\"mainColor2\">U’</span>R’U)(R<span  class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>R’U)(R<span  class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/f2l/img29.png"
+        },
+        {
+          "id": 9,
+          "text": "(RU)F(RUR’U’)F’R’",
+          "html": "(RU)F(RUR’<span class=\"mainColor2\">U’</span>)<span  class=\"mainColor3\">F’</span>R’",
+          "image": "src/assets/images/f2l/img35.png"
+        },
+        {
+          "id": 10,
+          "text": "y'(R’URU’)(R’UR)",
+          "html": "y'(R’UR<span class=\"mainColor2\">U’</span>)(R’UR)",
+          "image": "src/assets/images/f2l/img41.png"
+        },
+        {
+          "id": 11,
+          "text": "(RUR’U’)(RUR’)",
+          "html": "(RUR’<span class=\"mainColor2\">U’</span>)(RUR’)",
+          "image": "src/assets/images/f2l/img47.png"
+        },
+        {
+          "id": 12,
+          "text": "(RUR’U’)2(RUR’)",
+          "html": "(RUR’<span class=\"mainColor2\">U’</span>)2(RUR’)",
+          "image": "src/assets/images/f2l/img53.png"
+        },
+        {
+          "id": 13,
+          "text": "(RU’R’U)y'(R’UR)",
+          "html": "(R<span class=\"mainColor2\">U’</span>R’U)y'(R’UR)",
+          "image": "src/assets/images/f2l/img59.png"
+        },
+        {
+          "id": 14,
+          "text": "y'(R’U2)(RUR’U’R)",
+          "html": "y'(R’U2)(RUR’<span class=\"mainColor2\">U’</span>R)",
+          "image": "src/assets/images/f2l/img24.png"
+        },
+        {
+          "id": 15,
+          "text": "y’U’(R’U2)(RU’R’UR)",
+          "html": "y’<span class=\"mainColor2\">U’</span>(R’U2)(R<span class=\"mainColor2\">U’</span>R’UR)",
+          "image": "src/assets/images/f2l/img30.png"
+        },
+        {
+          "id": 16,
+          "text": "y'(R’URU’U’)(R’U’R)",
+          "html": "y'(R’UR<span class=\"mainColor3\">U’</span><span  class=\"mainColor2\">U’</span>)(R’<span class=\"mainColor2\">U’</span>R)",
+          "image": "src/assets/images/f2l/img36.png"
+        },
+        {
+          "id": 17,
+          "text": "FU(RU’R’F’)(RU’R’)",
+          "html": "FU(R<span class=\"mainColor2\">U’</span>R’<span  class=\"mainColor3\">F’</span>)(R<span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/f2l/img42.png"
+        },
+        {
+          "id": 18,
+          "text": "U(RU’R’U’)(RU’R’U)(RU’R’)",
+          "html": "U(R<span class=\"mainColor2\">U’</span>R’<span  class=\"mainColor2\">U’</span>)(R<span class=\"mainColor2\">U’</span>R’U)(R<span  class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/f2l/img48.png"
+        },
+        {
+          "id": 19,
+          "text": "(RU’R’U2)(RUR’)",
+          "html": "(R<span class=\"mainColor2\">U’</span>R’U2)(RUR’)",
+          "image": "src/assets/images/f2l/img54.png"
+        },
+        {
+          "id": 20,
+          "text": "U(RU’U’)(R’URU’R’)",
+          "html": "U(R<span class=\"mainColor2\">U’</span><span  class=\"mainColor3\">U’</span>)(R’UR<span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/f2l/img60.png"
+        },
+        {
+          "id": 21,
+          "text": "(RU’U’)(R’U’RUR’)",
+          "html": "(R<span class=\"mainColor3\">U’</span><span  class=\"mainColor2\">U’</span>)(R’<span class=\"mainColor2\">U’</span>RUR’)",
+          "image": "src/assets/images/f2l/img25.png"
+        },
+        {
+          "id": 22,
+          "text": "U’(RU’R’U2)(RU’R’)",
+          "html": "<span class=\"mainColor2\">U’</span>(R<span  class=\"mainColor2\">U’</span>R’U2)(R<span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/f2l/img31.png"
+        },
+        {
+          "id": 23,
+          "text": "U’(RUR’)y'(UR’U’R)",
+          "html": "<span class=\"mainColor2\">U’</span>(RUR’)y'(UR’<span class=\"mainColor2\">U’</span>R)",
+          "image": "src/assets/images/f2l/img37.png"
+        },
+        {
+          "id": 24,
+          "text": "y’U(R’URU’)(R’U’R)",
+          "html": "y’U(R’UR<span class=\"mainColor2\">U’</span>)(R’<span class=\"mainColor2\">U’</span>R)",
+          "image": "src/assets/images/f2l/img43.png"
+        },
+        {
+          "id": 25,
+          "text": "y'(R’U’R)",
+          "html": "y'(R’<span class=\"mainColor2\">U’</span>R)",
+          "image": "src/assets/images/f2l/img49.png"
+        },
+        {
+          "id": 26,
+          "text": "y’U(R’U’RU’)(R’U’R)",
+          "html": "y’U(R’<span class=\"mainColor2\">U’</span>R<span  class=\"mainColor2\">U’</span>)(R’<span class=\"mainColor2\">U’</span>R)",
+          "image": "src/assets/images/f2l/img55.png"
+        },
+        {
+          "id": 27,
+          "text": "y'(RU’U’)(R’2U’)(R2U’R’)",
+          "html": "y'(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>)(R’2<span class=\"mainColor2\">U’</span>)(R2<span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/f2l/img61.png"
+        },
+        {
+          "id": 28,
+          "text": "(lU)(rU’r’U’)l’",
+          "html": "(lU)(r<span class=\"mainColor2\">U’</span>r’<span class=\"mainColor2\">U’</span>)l’",
+          "image": "src/assets/images/f2l/img26.png"
+        },
+        {
+          "id": 29,
+          "text": "U’(RU’U’)(R’U2)(RU’R’)",
+          "html": "<span class=\"mainColor2\">U’</span>(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>)(R’U2)(R<span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/f2l/img32.png"
+        },
+        {
+          "id": 30,
+          "text": "U’(RUR’U’)(RU’U’R’)",
+          "html": "<span class=\"mainColor2\">U’</span>(RUR’<span class=\"mainColor2\">U’</span>)(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/f2l/img38.png"
+        },
+        {
+          "id": 31,
+          "text": "URU’R’",
+          "html": "UR<span class=\"mainColor2\">U’</span>R’",
+          "image": "src/assets/images/f2l/img44.png"
+        },
+        {
+          "id": 32,
+          "text": "U’(RU’U’R’U)(RUR’)",
+          "html": "<span class=\"mainColor2\">U’</span>(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>R’U)(RUR’)",
+          "image": "src/assets/images/f2l/img50.png"
+        },
+        {
+          "id": 33,
+          "text": "y’U(R’U’R)d’(RUR’)",
+          "html": "y’U(R’<span class=\"mainColor2\">U’</span>R)<span class=\"mainColor\">d’</span>(RUR’)",
+          "image": "src/assets/images/f2l/img56.png"
+        },
+        {
+          "id": 34,
+          "text": "y’U’(R’UR)",
+          "html": "y’<span class=\"mainColor2\">U’</span>(R’UR)",
+          "image": "src/assets/images/f2l/img62.png"
+        },
+        {
+          "id": 35,
+          "text": "y’U(R’U’RU’U’)(R’UR)",
+          "html": "y’U(R’<span class=\"mainColor2\">U’</span>R<span class=\"mainColor3\">U’</span><span><span class=\"mainColor2\">U’</span>)(R’UR)</span>",
+          "image": "src/assets/images/f2l/img27.png"
+        },
+        {
+          "id": 36,
+          "text": "y’U(R’U2RU’U’)(R’UR)",
+          "html": "y’U(R’U2R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>)(R’UR)",
+          "image": "src/assets/images/f2l/img33.png"
+        },
+        {
+          "id": 37,
+          "text": "(RU’R’U2)y'(R’U’R)",
+          "html": "(R<span class=\"mainColor2\">U’</span>R’U2)y'(R’<span  class=\"mainColor2\">U’</span>R)",
+          "image": "src/assets/images/f2l/img39.png"
+        },
+        {
+          "id": 38,
+          "text": "(RU’R’U)(RU’R’U2)(RU’R’)",
+          "html": "(R<span class=\"mainColor2\">U’</span>R’U)(R<span  class=\"mainColor2\">U’</span>R’U2)(R<span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/f2l/img45.png"
+        },
+        {
+          "id": 39,
+          "text": "U’(RUR’U)(RUR’)",
+          "html": "<span class=\"mainColor2\">U’</span>(RUR’U)(RUR’)",
+          "image": "src/assets/images/f2l/img51.png"
+        },
+        {
+          "id": 40,
+          "text": "(RUR’)",
+          "html": "(RUR’)",
+          "image": "src/assets/images/f2l/img57.png"
+        },
+        {
+          "id": 41,
+          "text": "U'(RU’R’U)(RUR’)",
+          "html": "U'(R<span class=\"mainColor2\">U’</span>R’U)(RUR’)",
+          "image": "src/assets/images/f2l/img63.png"
+        }
+      ]
+    },
+    "oll": {
+      "name": "Orientation of Last Layer",
+      "abbr": "OLL",
+      "desc": [
+        "俯视图(vertical view)的黑块和小黑条(black bars and square)表示黄色块(the yellow pieces)",
+        "括号：一组连贯手法和分组记忆(A series of movements)",
+        "括号外加2：括号里步骤重复1次(Repeat the same series of movements once)"
+      ],
+      "formula": [
+        {
+          "id": 1,
+          "text": "(RU’U’)(R’2FRF’)U2(R’FRF’)",
+          "html": "(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>)(R’2FR<span class=\"mainColor3\">F’</span>)U2(R’FR<span class=\"mainColor3\">F’</span>)",
+          "image": "src/assets/images/oll/img96.png"
+        },
+        {
+          "id": 2,
+          "text": "F(RUR’U’)F’f(RUR’U’)f’",
+          "html": "F(RUR’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor3\">F’</span>f(RUR’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor3\">f’</span>",
+          "image": "src/assets/images/oll/img102.png"
+        },
+        {
+          "id": 3,
+          "text": "f(RUR’U’)f’U’F(RUR’U’)F’",
+          "html": "f(RUR’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor3\">f’</span><span class=\"mainColor2\">U’</span>F(RUR’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor3\">F’</span>",
+          "image": "src/assets/images/oll/img108.png"
+        },
+        {
+          "id": 4,
+          "text": "f(RUR’U’)f’UF(RUR’U’)F’",
+          "html": "f(RUR’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor3\">f’</span>UF(RUR’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor3\">F’</span>",
+          "image": "src/assets/images/oll/img114.png"
+        },
+        {
+          "id": 5,
+          "text": "(r’U2)(RUR’U)r",
+          "html": "(r’U2)(RUR’U)r",
+          "image": "src/assets/images/oll/img68.png"
+        },
+        {
+          "id": 6,
+          "text": "(rU’U’)(R’U’RU’r’)",
+          "html": "(r<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>)(R’<span class=\"mainColor2\">U’</span>R<span class=\"mainColor2\">U’</span>r’)",
+          "image": "src/assets/images/oll/img74.png"
+        },
+        {
+          "id": 7,
+          "text": "(rUR’U)(RU’U’r’)",
+          "html": "(rUR’U)(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>r’)",
+          "image": "src/assets/images/oll/img80.png"
+        },
+        {
+          "id": 8,
+          "text": "(r’U’RU’)(R’U2r)",
+          "html": "(r’<span class=\"mainColor2\">U’</span>R<span class=\"mainColor2\">U’</span>)(R’U2r)",
+          "image": "src/assets/images/oll/img86.png"
+        },
+        {
+          "id": 9,
+          "text": "(RUR’U’)(R’F)(R2UR’U’)F’",
+          "html": "(RUR’<span class=\"mainColor2\">U’</span>)(R’F)(R2UR’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor3\">F’</span>",
+          "image": "src/assets/images/oll/img91.png"
+        },
+        {
+          "id": 10,
+          "text": "(RUR’U)(R’FRF’)(RU’U’R’)",
+          "html": "(RUR’<span class=\"mainColor\">U</span>)(R’FR<span class=\"mainColor3\">F’</span>)(R<span class=\"mainColor2\">U’</span><span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/oll/img64.png"
+        },
+        {
+          "id": 11,
+          "text": "(r’R2UR’U)(RU’U’R’U)M’",
+          "html": "(r’R2UR’U)(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>R’U)<span class=\"mainColor\">M’</span>",
+          "image": "src/assets/images/oll/img97.png"
+        },
+        {
+          "id": 12,
+          "text": "M’(R’U’RU’)(R’U2RU’)M",
+          "html": "<span class=\"mainColor\">M’</span>(R’<span class=\"mainColor2\">U’</span>R<span class=\"mainColor2\">U’</span>)(R’U2R<span class=\"mainColor2\">U’</span>)M",
+          "image": "src/assets/images/oll/img103.png"
+        },
+        {
+          "id": 13,
+          "text": "f(RU)(R2U’)(R’URU’)f’",
+          "html": "f(RU)(R2<span class=\"mainColor2\">U’</span>)(R’UR<span class=\"mainColor2\">U’</span>)<span class=\"mainColor\">f’</span>",
+          "image": "src/assets/images/oll/img109.png"
+        },
+        {
+          "id": 14,
+          "text": "(R’F)(RUR’F’R)(FU’F’)",
+          "html": "(R’F)(RUR’<span class=\"mainColor3\">F’</span>R)(F<span class=\"mainColor2\">U’</span><span class=\"mainColor3\">F’</span>)",
+          "image": "src/assets/images/oll/img115.png"
+        },
+        {
+          "id": 15,
+          "text": "(r’U’r)(R’U’RU)(r’Ur)",
+          "html": "(r’<span class=\"mainColor2\">U’</span>r)(R’<span class=\"mainColor2\">U’</span>RU)(r’Ur)",
+          "image": "src/assets/images/oll/img69.png"
+        },
+        {
+          "id": 16,
+          "text": "(rUr’)(RUR’U’)(rU’r’)",
+          "html": "(rUr’)(RUR’<span class=\"mainColor2\">U’</span>)(r<span class=\"mainColor2\">U’</span><span class=\"mainColor\">r’</span>)",
+          "image": "src/assets/images/oll/img75.png"
+        },
+        {
+          "id": 17,
+          "text": "(lU’l’)f(R2BR’UR’U’f’)",
+          "html": "(l<span class=\"mainColor2\">U’</span>l’)f(R2BR’UR’<span class=\"mainColor2\">U’</span><span class=\"mainColor3\">f’</span>)",
+          "image": "src/assets/images/oll/img81.png"
+        },
+        {
+          "id": 18,
+          "text": "(rUR’U)(RU’U’r’)(r’U’RU’)(R’U2r)",
+          "html": "(rUR’U)(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>r’)(r’<span class=\"mainColor2\">U’</span>R<span class=\"mainColor2\">U’</span>)(R’U2r)",
+          "image": "src/assets/images/oll/img87.png"
+        },
+        {
+          "id": 19,
+          "text": "(r’RU)(RUR’U’r)(R’2FRF’)",
+          "html": "(r’RU)(RUR’<span class=\"mainColor2\">U’</span>r)(R’2FR<span class=\"mainColor3\">F’</span>)",
+          "image": "src/assets/images/oll/img92.png"
+        },
+        {
+          "id": 20,
+          "text": "(rUR’U’)M’2U(RU’R’U’)M’",
+          "html": "(rUR’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor\">M’2</span>U(R<span class=\"mainColor2\">U’</span>R’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor\">M’</span>",
+          "image": "src/assets/images/oll/img65.png"
+        },
+        {
+          "id": 21,
+          "text": "(RU’U’)(R’U’RUR’U’)(RU’R’)",
+          "html": "(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>)(R’<span class=\"mainColor2\">U’</span>RUR’<span class=\"mainColor2\">U’</span>)(R<span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/oll/img98.png"
+        },
+        {
+          "id": 22,
+          "text": "(RU’U’)(R’2U’)(R2U’)(R’2U’)(U’R)",
+          "html": "(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>)(R’2<span class=\"mainColor2\">U’</span>)(R2<span class=\"mainColor2\">U’</span>)(R’2<span class=\"mainColor2\">U’</span>)(<span class=\"mainColor3\">U’</span>R)",
+          "image": "src/assets/images/oll/img104.png"
+        },
+        {
+          "id": 23,
+          "text": "(R2D’)(RU’U’R’D)(RU’U’R)",
+          "html": "(R2<span class=\"mainColor\">D’</span>)(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>R’<span class=\"mainColor\">D</span>)(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>R)",
+          "image": "src/assets/images/oll/img110.png"
+        },
+        {
+          "id": 24,
+          "text": "(rUR’U’)(r’FRF’)",
+          "html": "(rUR’<span class=\"mainColor2\">U’</span>)(r’FR<span class=\"mainColor3\">F’</span>)",
+          "image": "src/assets/images/oll/img116.png"
+        },
+        {
+          "id": 25,
+          "text": "F’(rUR’U’)(r’FR)",
+          "html": "<span class=\"mainColor3\">F’</span>(rUR’<span class=\"mainColor2\">U’</span>)(r’FR)",
+          "image": "src/assets/images/oll/img70.png"
+        },
+        {
+          "id": 26,
+          "text": "(RU’U’)(R’U’RU’R’)",
+          "html": "(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>)(R’<span class=\"mainColor2\">U’</span>R<span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/oll/img76.png"
+        },
+        {
+          "id": 27,
+          "text": "(RUR’U)(RU’U’R’)",
+          "html": "(RUR’<span class=\"mainColor\">U</span>)(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/oll/img82.png"
+        },
+        {
+          "id": 28,
+          "text": "(rUR’U’)(r’RU)(RU’R’)",
+          "html": "(rUR’<span class=\"mainColor2\">U’</span>)(r’RU)(R<span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/oll/img88.png"
+        },
+        {
+          "id": 29,
+          "text": "(RUR’U’)(RU’R’F’U’F)(RUR’)",
+          "html": "(RUR’<span class=\"mainColor2\">U’</span>)(R<span class=\"mainColor2\">U’</span>R’<span class=\"mainColor3\">F’</span><span class=\"mainColor2\">U’</span>F)(RUR’)",
+          "image": "src/assets/images/oll/img93.png"
+        },
+        {
+          "id": 30,
+          "text": "f(RU)(R2U’R’U)(R2U’R’)f’",
+          "html": "f(RU)(R2<span class=\"mainColor2\">U’</span>R’U)(R2<span class=\"mainColor2\">U’</span>R’)<span class=\"mainColor3\">f’</span>",
+          "image": "src/assets/images/oll/img66.png"
+        },
+        {
+          "id": 31,
+          "text": "(r’F’UF)(rU’r’U’r)",
+          "html": "(r’<span class=\"mainColor3\">F’UF</span>)(r<span class=\"mainColor2\">U’</span>r’<span class=\"mainColor2\">U’</span>r)",
+          "image": "src/assets/images/oll/img99.png"
+        },
+        {
+          "id": 32,
+          "text": "(RU)(B’U’)(R’URBR’)",
+          "html": "(RU)(<span class=\"mainColor3\">B’</span><span class=\"mainColor2\">U’</span>)(R’URBR’)",
+          "image": "src/assets/images/oll/img105.png"
+        },
+        {
+          "id": 33,
+          "text": "(RUR’U’)(R’FRF’)",
+          "html": "(RUR’<span class=\"mainColor2\">U’</span>)(R’FR<span class=\"mainColor3\">F’</span>)",
+          "image": "src/assets/images/oll/img111.png"
+        },
+        {
+          "id": 34,
+          "text": "(RUR2U’)(R’F)(RURU’F’)",
+          "html": "(RUR2<span class=\"mainColor2\">U’</span>)(R’F)(RUR<span class=\"mainColor2\">U’</span><span class=\"mainColor\">F’</span>)",
+          "image": "src/assets/images/oll/img117.png"
+        },
+        {
+          "id": 35,
+          "text": "(RU’U’)(R’2FRF’)(RU’U’R’)",
+          "html": "(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>)(R’2FR<span class=\"mainColor3\">F’</span>)(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/oll/img71.png"
+        },
+        {
+          "id": 36,
+          "text": "(R’U’RU’)(R’URU)(lU’R’U)",
+          "html": "(R’<span class=\"mainColor2\">U’</span>R<span class=\"mainColor2\">U’</span>)(R’URU)(l<span class=\"mainColor2\">U’</span>R’U)",
+          "image": "src/assets/images/oll/img77.png"
+        },
+        {
+          "id": 37,
+          "text": "F(RU’R’U’)(RUR’F’)",
+          "html": "F(R<span class=\"mainColor2\">U’</span>R’<span class=\"mainColor2\">U’</span>)(RUR’<span class=\"mainColor3\">F’</span>)",
+          "image": "src/assets/images/oll/img83.png"
+        },
+        {
+          "id": 38,
+          "text": "(RUR’U)(RU’R’U’)(R’FRF’)",
+          "html": "(RUR’U)(R<span class=\"mainColor2\">U’</span>R’<span class=\"mainColor2\">U’</span>)(R’FR<span class=\"mainColor3\">F’</span>)",
+          "image": "src/assets/images/oll/img89.png"
+        },
+        {
+          "id": 39,
+          "text": "(RUR’F’U’F)U(RU2R’)",
+          "html": "(RUR’<span class=\"mainColor3\">F’</span><span class=\"mainColor2\">U’</span>F)U(RU2R’)",
+          "image": "src/assets/images/oll/img94.png"
+        },
+        {
+          "id": 40,
+          "text": "(R’F)(RUR’U’)F’(UR)",
+          "html": "(R’F)(RUR’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor3\">F’</span>(UR)",
+          "image": "src/assets/images/oll/img94_2.png"
+        },
+        {
+          "id": 41,
+          "text": "(RUR’U)(RU’U’R’)F(RUR’U’)F’",
+          "html": "(RUR’<span class=\"mainColor\">U</span>)(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>R’)F(RUR’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor3\">F’</span>",
+          "image": "src/assets/images/oll/img100.png"
+        },
+        {
+          "id": 42,
+          "text": "(R’U’RU’)(R’U2R)F(RUR’U’)F’",
+          "html": "(R’<span class=\"mainColor2\">U’</span>R<span class=\"mainColor2\">U’</span>)(R’U2R)F(RUR’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor3\">F’</span>",
+          "image": "src/assets/images/oll/img106.png"
+        },
+        {
+          "id": 43,
+          "text": "(B’U’)(R’URB)",
+          "html": "(<span class=\"mainColor3\">B’</span><span class=\"mainColor2\">U’</span>)(R’URB)",
+          "image": "src/assets/images/oll/img112.png"
+        },
+        {
+          "id": 44,
+          "text": "f(RUR’U’)f’",
+          "html": "f(RUR’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor3\">f’</span>",
+          "image": "src/assets/images/oll/img118.png"
+        },
+        {
+          "id": 45,
+          "text": "F(RUR’U’)F’",
+          "html": "F(RUR’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor3\">F’</span>",
+          "image": "src/assets/images/oll/img72.png"
+        },
+        {
+          "id": 46,
+          "text": "(R’U’)(R’FRF’)(U R)",
+          "html": "(R’<span class=\"mainColor2\">U’</span>)(R’FR<span class=\"mainColor3\">F’</span>)(U R)",
+          "image": "src/assets/images/oll/img78.png"
+        },
+        {
+          "id": 47,
+          "text": "b’(U’R’UR)2b",
+          "html": "<span class=\"mainColor3\">b’</span>(<span class=\"mainColor2\">U’</span>R’UR)2b",
+          "image": "src/assets/images/oll/img84.png"
+        },
+        {
+          "id": 48,
+          "text": "F(RUR’U’)2F’",
+          "html": "F(RUR’<span class=\"mainColor2\">U’</span>)2<span class=\"mainColor3\">F’</span>",
+          "image": "src/assets/images/oll/img90.png"
+        },
+        {
+          "id": 49,
+          "text": "(RB’)(R’2FR2B)(R’2F’R)",
+          "html": "(R<span class=\"mainColor3\">B’</span>)(R’2FR2B)(R’2<span class=\"mainColor3\">F’</span>R)",
+          "image": "src/assets/images/oll/img95.png"
+        },
+        {
+          "id": 50,
+          "text": "(r’U)(r2U’r’2U’)(r2Ur’)",
+          "html": "(r’U)(r2<span class=\"mainColor2\">U’</span>r’2<span class=\"mainColor2\">U’</span>)(r2Ur’)",
+          "image": "src/assets/images/oll/img95_2.png"
+        },
+        {
+          "id": 51,
+          "text": "f(RUR’U’)2f’",
+          "html": "f(RUR’<span class=\"mainColor2\">U’</span>)2<span class=\"mainColor3\">f’</span>",
+          "image": "src/assets/images/oll/img101.png"
+        },
+        {
+          "id": 52,
+          "text": "(R’F’U’FU’)(RUR’UR)",
+          "html": "(R’<span class=\"mainColor3\">F’</span><span class=\"mainColor2\">U’</span>F<span class=\"mainColor2\">U’</span>)(RUR’<span class=\"mainColor\">U</span>R)",
+          "image": "src/assets/images/oll/img107.png"
+        },
+        {
+          "id": 53,
+          "text": "(r’U2)(RUR’U’)(RUR’Ur)",
+          "html": "(r’U2)(RUR’<span class=\"mainColor2\">U’</span>)(RUR’Ur)",
+          "image": "src/assets/images/oll/img113.png"
+        },
+        {
+          "id": 54,
+          "text": "(rU’U’)(R’U’RU)(R’U’RU’r’)",
+          "html": "(r<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>)(R’<span class=\"mainColor2\">U’</span>RU)(R’<span class=\"mainColor2\">U’</span>R<span class=\"mainColor2\">U’</span>r’)",
+          "image": "src/assets/images/oll/img119.png"
+        },
+        {
+          "id": 55,
+          "text": "(rU’U’R’U’)(r’R2UR’U’)(rU’r’)",
+          "html": "(r<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>R’<span class=\"mainColor2\">U’</span>)(r’R2UR’<span class=\"mainColor2\">U’</span>)(r<span class=\"mainColor2\">U’</span>r’)",
+          "image": "src/assets/images/oll/img73.png"
+        },
+        {
+          "id": 56,
+          "text": "(rUr’)(URU’R’)2(rU’r’)",
+          "html": "(rUr’)(UR<span class=\"mainColor2\">U’</span>R’)2(r<span class=\"mainColor2\">U’</span>r’)",
+          "image": "src/assets/images/oll/img79.png"
+        },
+        {
+          "id": 57,
+          "text": "(RUR’U’)M’(URU’r’)",
+          "html": "(RUR’<span class=\"mainColor2\">U’</span>)<span class=\"mainColor\">M’</span>(UR<span class=\"mainColor2\">U’</span>r’)",
+          "image": "src/assets/images/oll/img85.png"
+        }
+      ]
+    },
+    "pll": {
+      "name": "Permutation of Last Layer",
+      "abbr": "PLL",
+      "desc": [
+        "俯视图(vertical view)的小黑条(black bars)表示特征/相同色块(the same colored pieces)",
+        "括号：一组连贯手法和分组记忆(A series of movements)",
+        "括号外加2：括号里步骤重复1次(Repeat the same series of movements once)"
+      ],
+      "formula": [
+        {
+          "id": 1,
+          "text": "M’2UMU2M’UM’2 / (RU’R)(UR)2(U’R’U’R’2)",
+          "html": "<span class=\"mainColor\">M’2</span>U<span class=\"mainColor\">M</span>U2<span class=\"mainColor\">M’</span>U<span class=\"mainColor\">M’2</span><span style=\"color: #00A650;\"> OR </span><br>(R<span class=\"mainColor2\">U’</span>R)(UR)2(<span class=\"mainColor2\">U’</span>R’<span class=\"mainColor2\">U’</span>R’2)",
+          "image": "src/assets/images/pll/img125.png"
+        },
+        {
+          "id": 2,
+          "text": "M’2 U’M U2M’U’M’2 / (R2 U)(RU)(R’U’)2(R’UR’)",
+          "html": "<span class=\"mainColor\">M’2</span><span class=\"mainColor2\">U’</span><span class=\"mainColor\">M</span>U2<span class=\"mainColor\">M’</span><span class=\"mainColor2\">U’</span><span class=\"mainColor\">M’2</span><span style=\"color: #00A650;\"> OR </span><br>(R2 U)(RU)(R’<span class=\"mainColor2\">U’</span>)2(R’UR’)",
+          "image": "src/assets/images/pll/img131.png"
+        },
+        {
+          "id": 3,
+          "text": "M’2UM’2U2M’2UM’2",
+          "html": "<span class=\"mainColor\">M’2</span>U<span class=\"mainColor\">M’2</span>U2<span class=\"mainColor\">M’2</span>U<span class=\"mainColor\">M’2</span>",
+          "image": "src/assets/images/pll/img136.png"
+        },
+        {
+          "id": 4,
+          "text": "M’U(M’2U)2M’U2M’2U’",
+          "html": "<span class=\"mainColor\">M’</span>U(<span class=\"mainColor\">M’2</span>U)2<span class=\"mainColor\">M’</span>U2<span class=\"mainColor\">M’2</span><span class=\"mainColor2\">U’</span>",
+          "image": "src/assets/images/pll/img120.png"
+        },
+        {
+          "id": 5,
+          "text": "x’R2D2(R’U’R)D2(R’UR’)",
+          "html": "x’R2<span class=\"mainColor\">D2</span>(R’<span class=\"mainColor2\">U’</span>R)<span class=\"mainColor\">D2</span>(R’UR’)",
+          "image": "src/assets/images/pll/img126.png"
+        },
+        {
+          "id": 6,
+          "text": "x'(RU’R)D2(R’UR)D2R’2",
+          "html": "x'(R<span class=\"mainColor2\">U’</span>R)<span class=\"mainColor\">D2</span>(R’UR)<span class=\"mainColor\">D2</span>R’2",
+          "image": "src/assets/images/pll/img132.png"
+        },
+        {
+          "id": 7,
+          "text": "x'(RU’R’D)(RUR’D’)(RUR’D)(RU’R’D’)",
+          "html": "x'(R<span class=\"mainColor2\">U’</span>R’<span class=\"mainColor\">D</span>)(RUR’<span class=\"mainColor\">D’</span>)(RUR’<span class=\"mainColor\">D</span>)(R<span class=\"mainColor2\">U’</span>R’<span class=\"mainColor\">D’</span>)",
+          "image": "src/assets/images/pll/img137.png"
+        },
+        {
+          "id": 8,
+          "text": "(RUR’U’)(R’F)(R2U’R’U’)(RUR’F’)",
+          "html": "(RUR’<span class=\"mainColor2\">U’</span>)(R’F)(R2<span class=\"mainColor2\">U’</span>R’<span class=\"mainColor2\">U’</span>)(RUR’<span class=\"mainColor3\">F’</span>)",
+          "image": "src/assets/images/pll/img121.png"
+        },
+        {
+          "id": 9,
+          "text": "(R’U’F’)(RUR’U’)(R’F)(R2U’R’U’)(RUR’UR)",
+          "html": "(R’<span class=\"mainColor2\">U’</span><span class=\"mainColor3\">F’</span>)(RUR’<span class=\"mainColor2\">U’</span>)(R’F)(R2<span class=\"mainColor2\">U’</span>R’<span class=\"mainColor2\">U’</span>)(RUR’UR)",
+          "image": "src/assets/images/pll/img127.png"
+        },
+        {
+          "id": 10,
+          "text": "(R’UR’d’)(R’F’R2U’)(R’UR’FRF)",
+          "html": "(R’UR’d’)(R’<span class=\"mainColor3\">F’</span>R2<span class=\"mainColor2\">U’</span>)(R’UR’FRF)",
+          "image": "src/assets/images/pll/img133.png"
+        },
+        {
+          "id": 11,
+          "text": "F(RU’R’U’)(RUR’F’)(RUR’U’)(R’FRF’)",
+          "html": "F(R<span class=\"mainColor2\">U’</span>R’<span class=\"mainColor2\">U’</span>)(RUR’<span class=\"mainColor3\">F’</span>)(RUR’<span class=\"mainColor2\">U’</span>)(R’FR<span class=\"mainColor3\">F’</span>)",
+          "image": "src/assets/images/pll/img138.png"
+        },
+        {
+          "id": 12,
+          "text": "z(U’RD’)(R2UR’U’)(R2U)(DR’)",
+          "html": "z(<span class=\"mainColor2\">U’</span>R<span class=\"mainColor\">D’</span>)(R2UR’<span class=\"mainColor2\">U’</span>)(R2U)(<span class=\"mainColor\">D</span>R’)",
+          "image": "src/assets/images/pll/img122.png"
+        },
+        {
+          "id": 13,
+          "text": "(RUR’F’)(RUR’U’)(R’F)(R2U’R’U’)",
+          "html": "(RUR’<span class=\"mainColor2\">F’</span>)(RUR’<span class=\"mainColor2\">U’</span>)(R’F)(R2<span class=\"mainColor2\">U’</span>R’<span class=\"mainColor2\">U’</span>)",
+          "image": "src/assets/images/pll/img128.png"
+        },
+        {
+          "id": 14,
+          "text": "(R’U2)(RU’U’)(R’FRUR’U’)(R’F’R2U’)",
+          "html": "(R’U2)(R<span class=\"mainColor3\">U’</span><span class=\"mainColor2\">U’</span>)(R’FRUR’<span class=\"mainColor2\">U’</span>)(R’<span class=\"mainColor3\">F’</span>R2<span class=\"mainColor2\">U’</span>)",
+          "image": "src/assets/images/pll/img134.png"
+        },
+        {
+          "id": 15,
+          "text": "(RU’R’U’)(RURD)(R’U’RD’)(R’U2R’U’)",
+          "html": "(R<span class=\"mainColor2\">U’</span>R’<span class=\"mainColor2\">U’</span>)(RUR<span class=\"mainColor\">D</span>)(R’<span class=\"mainColor2\">U’</span>R<span class=\"mainColor\">D’</span>)(R’U2R’U’)",
+          "image": "src/assets/images/pll/img139.png"
+        },
+        {
+          "id": 16,
+          "text": "(R’2u’RU’R)(UR’u)(R2fR’f’)",
+          "html": "(R’2<span class=\"mainColor2\">u’</span>R<span class=\"mainColor3\">U’</span>R)(UR’u)(R2fR’<span class=\"mainColor3\">f’</span>)",
+          "image": "src/assets/images/pll/img123.png"
+        },
+        {
+          "id": 17,
+          "text": "(RUR’)y'(R2u’RU’)(R’UR’uR2)",
+          "html": "(RUR’)y'(R2<span class=\"mainColor3\">u’</span>R<span class=\"mainColor2\">U’</span>)(R’UR’uR2)",
+          "image": "src/assets/images/pll/img129.png"
+        },
+        {
+          "id": 18,
+          "text": "(R2uR’)(UR’U’Ru’)(R’2F’UF)",
+          "html": "(R2uR’)(UR’<span class=\"mainColor2\">U’</span>R<span class=\"mainColor2\">u’</span>)(R’2<span class=\"mainColor3\">F’UF</span>)",
+          "image": "src/assets/images/pll/img135.png"
+        },
+        {
+          "id": 19,
+          "text": "(R’d’F)(R2u)(R’U)(RU’Ru’R’2)",
+          "html": "(R’d’F)(R2u)(R’U)(R<span class=\"mainColor3\">U’</span>R<span class=\"mainColor2\">u’</span>R’2)",
+          "image": "src/assets/images/pll/img140.png"
+        },
+        {
+          "id": 20,
+          "text": "(R’URU’)(R’F’U’)(FRUR’F)(R’F’RU’R)",
+          "html": "(R’UR<span class=\"mainColor2\">U’</span>)(R’<span class=\"mainColor3\">F’</span><span class=\"mainColor2\">U’</span>)(FRUR’F)(R’<span class=\"mainColor3\">F’</span>R<span class=\"mainColor2\">U’</span>R)",
+          "image": "src/assets/images/pll/img124.png"
+        },
+        {
+          "id": 21,
+          "text": "(RUR’U)(RUR’F’)(RUR’U’)(R’F)(R2U’R’U2)(RU’R’)",
+          "html": "(RUR’<span class=\"mainColor\">U</span>)(RUR’<span class=\"mainColor2\">F’</span>)(RUR’<span class=\"mainColor2\">U’</span>)(R’F)(R2<span class=\"mainColor2\">U’</span>R’U2)(R<span class=\"mainColor2\">U’</span>R’)",
+          "image": "src/assets/images/pll/img130.png"
+        }
+      ]
+    }
+  }
+}

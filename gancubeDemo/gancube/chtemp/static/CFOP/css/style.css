@@ -1,0 +1,308 @@
+
+
+body{
+	--mainColor: #f08200;
+	--mainColor2: #0075CE;
+	--mainColor3: #E50012;
+}
+.moduleBox{
+	margin-top: 32px;
+	padding: 42px 8px 0;
+}
+.moduleBox .mt10{
+	margin-top: 10px;
+}
+.moduleBox .mb10{
+	margin-bottom: 10px;
+}
+.moduleBox .mt20{
+	margin-top: 20px;
+}
+.moduleBox .mt50{
+	margin-top: 50px;
+}
+.moduleBox .stepLetter{
+	position: relative;
+	display: block;
+	width: 48px;
+	height: 62px;
+	line-height: 62px;
+	border-right: 2px solid #333;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 46px;
+	text-align: center;
+}
+.moduleBox .stepLetter.backMark:after{
+	content: '’';
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0;
+	line-height: 1;
+	font-size: 46px;
+}
+.moduleBox .stepTag{
+	position: relative;
+	padding-left: 60px;
+}
+.moduleBox .stepTag:before{
+	display: block;
+	content: attr(stepTag);
+	position: absolute;
+	left: 0;
+	top: 2px;
+	width: auto;
+	padding: 4px 6px;
+	text-align: center;
+	background: #f08200;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+}
+.moduleBox .stepTitle{
+	position: relative;
+	overflow: hidden;
+	justify-content: center;
+}
+.moduleBox .stepTitle .stepLetter{
+	float: left;
+	width: 48px;
+}
+.moduleBox .stepTitle .stepTitleText{
+	float: right;
+	width: calc(320px - 48px);
+	padding-left: 8px;
+	font-weight: 700;
+}
+.moduleBox .edging{
+	position: relative;
+	border: 4px solid #f08200;
+	background: #f5fbfe;
+	padding: 10px;
+}
+.moduleBox .tipsBox{
+	padding: 14px 12px 8px;
+}
+.moduleBox .tipsBox:after{
+	content: '';
+	display: block;
+	height: 0;
+	clear: both;
+}
+.moduleBox .tipsBox:before{
+	content: '提示';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	left: 10px;
+	top: -12px;
+	padding: 0 4px;
+	background: #f5fbfe;
+	color: #f08200;
+	font-weight: 700;
+}
+.moduleBox .tipsBox.tipsBox_custom:before{
+	content: attr(tipsTitle);
+}
+.moduleBox .tipsBox p,.moduleBox .stepIcon{
+	padding-left: 20px;
+	background: url(../images/icon1.png) no-repeat left 2px;
+	background-size: auto 16px;
+}
+.moduleBox .mainColor{
+	color: #f08200;
+	border-color: #f08200;
+}
+.moduleBox .mainColor2{
+	color: var(--mainColor2);
+	border-color: var(--mainColor2);
+}
+.moduleBox .mainColor3{
+	color: var(--mainColor3);
+}
+.moduleBox .color_red{
+	color: #e60013;
+}
+.moduleBox .stepExplain{
+	max-width: 200px;
+	margin: 0 auto;
+	height: 126px;
+	align-items: center;
+}
+.moduleBox .stepExplain .stepLetter{
+	text-align: left;
+}
+.moduleBox .stepExplain .stepText{
+	flex: 1 1 0;
+	padding-left: 10px;
+	padding-right: 14px;
+	align-items: center;
+	line-height: 31px;
+}
+.moduleBox .section{
+	margin: 0 auto 20px;
+	background: #f4fbfe;
+	padding: 16px 0px;
+	border-radius: 6px;
+}
+.moduleBox .exampleGrid{
+	overflow: hidden;
+	border: 2px solid #f08200;
+}
+.moduleBox .exampleGrid .unit{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	float: left;
+	position: relative;
+	border: 2px solid #f08200;
+	padding: 8px;
+	overflow: hidden;
+	width: 100%;
+	min-height: 130px;
+	text-align: center;
+	align-items: center;
+}
+.moduleBox .exampleGrid .unit .exampleImg{
+	height: 120px;
+	max-height: 100%;
+}
+.moduleBox .exampleGrid .unit .exampleImg img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.moduleBox .exampleGrid .unit .exampleText{
+	width: 50%;
+	padding: 4px;
+}
+.moduleBox .exampleGrid2{
+	width: 100%;
+	font-size: 0;
+	border: 2px solid var(--mainColor);
+}
+.moduleBox .exampleGrid2 .unit{
+	display: inline-block;
+	vertical-align: top;
+	width: 33.3%;
+	font-size: 16px;
+	padding: 4px;
+	border: 2px solid var(--mainColor);
+}
+.moduleBox .exampleGrid3 p{
+	width: 100%;
+	text-align: center;
+}
+.moduleBox .exampleGrid4{
+	counter-reset: i;
+	/*background-color: var(--mainColor);*/
+	justify-content: flex-start;
+}
+.moduleBox .exampleGrid4 .unit{
+	width: 100%;
+	counter-increment: i;
+	/*background-color: #fff;*/
+}
+.moduleBox .exampleGrid4 .firstUnit{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	float: left;
+	position: relative;
+	width: 100%;
+	border: 2px solid #f08200;
+	padding: 4px;
+	overflow: hidden;
+	min-height: 130px;
+	text-align: center;
+	align-items: center;
+	/*background-color: #fff;*/
+}
+.moduleBox .exampleGrid4 .firstUnit .exampleText{
+	width: 100%;
+	padding-left: 10%;
+	text-align: left;
+}
+.moduleBox .exampleGrid4 .unit .orderNum{
+	/*content: '0' counter(i);*/
+	display: block;
+	font-size: 16px;
+	color: var(--mainColor);
+	font-weight: 700;
+	margin-left: 5%;
+	margin-right: 2%;
+}
+.moduleBox .exampleGrid4 .unit .exampleImg{
+	width: 30%;
+	height: auto;
+}
+.moduleBox .exampleGrid4 .unit .exampleText{
+	width: 50%;
+	margin-left: 3%;
+	letter-spacing: 2px;
+	text-align: left;
+	font-weight: 700;
+}
+
+.courseTitle{
+	width: 300px;
+	padding: 10px 0 0;
+	margin: 0 auto ;
+	font-size: 24px;
+	text-align: center;
+}
+.courseTitle .logo{
+	width: 60px;
+	margin-bottom: 8px;
+	vertical-align: top;
+}
+.courseTitle .bigText{
+	font-size: 36px;
+}
+.basicsTurn{
+	margin-top: 40px;
+}
+.moduleBox .qrImgBox{
+	width: 300px;
+	padding: 8px 16px;
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+.buy a {
+	color: #fff;
+}
+.buy a:hover {
+	text-decoration: none;
+	color: #44a8f2;
+}
+div.buy {
+	display: inline-block;
+	margin-top: 20px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 48px;
+	text-align: center;
+	background-color: #44a8f2;
+	border: 2px solid #44a8f2;
+	padding: 0 15px;
+}
+div.buy:hover {
+    background-color: rgba(0,0,0,0);
+    background-color: #fff;
+    transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;  /* Firefox 4 */
+    -webkit-transition: background-color 0.3s;   /* Safari 和 Chrome */
+    -o-transition: background-color 0.3s;    /* Opera */
+    border: 2px solid #44a8f2;
+    color: #44a8f2;
+    cursor: pointer;
+}
+.buy:hover a {
+     color: #44a8f2;
+}

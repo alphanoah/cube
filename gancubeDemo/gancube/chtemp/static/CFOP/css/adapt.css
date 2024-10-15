@@ -1,0 +1,49 @@
+
+
+@media (min-width: 768px) {
+	.moduleBox .exampleGrid .unit{
+		width: 50%;
+		padding: 4px;
+	}
+	.moduleBox .qrImgBox{
+		width: 360px;
+		font-size: 24px;
+	}
+	.moduleBox .exampleGrid4 .unit,.moduleBox .exampleGrid4 .firstUnit{
+		width: 50%;
+		padding: 4px;
+	}
+}
+@media (min-width: 992px) {
+	.basicsTurn{
+		margin-top: 0px;
+	}
+	.courseTitle{
+		width: 650px;
+		padding: 20px 0 0;
+		font-size: 42px;
+	}
+	.courseTitle .logo{
+		width: 120px;
+		margin-bottom: 20px;
+	}
+	.courseTitle .bigText{
+		font-size: 52px;
+	}
+	.moduleBox .exampleGrid2 .unit{
+		width: 20%;
+	}
+	.moduleBox .exampleGrid4 .unit,.moduleBox .exampleGrid4 .firstUnit{
+		width: 33.33%;
+		padding: 6px;
+	}
+}
+@media (min-width: 1200px) {
+	.moduleBox .exampleGrid2 .unit{
+		width: 14.28%;
+		padding: 6px;
+	}
+	.moduleBox .exampleGrid4 .unit,.moduleBox .exampleGrid4 .firstUnit{
+		width: 25%;
+	}
+}
