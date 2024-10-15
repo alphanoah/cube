@@ -15,7 +15,7 @@
             {{ item }}
           </p>
           <div class="imgArea">
-            <img v-for="item2 in value.images" :src="item2" alt="">
+            <img v-for="item2 in value.images" :src="`src/assets/images/${ item2 }`" alt="">
           </div>
         </div>
       </div>

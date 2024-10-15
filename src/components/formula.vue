@@ -50,7 +50,7 @@
         >
           <div class="orderNum">{{ (element.id < 10 ? '0' : '') + element.id }}</div>
           <div class="exampleImg">
-            <img :src="element.image" alt="">
+            <img :src="`src/assets/images/${ element.image }`" alt="">
           </div>
           <div class="codeText">
             <p v-html="element.html"></p>
@@ -114,7 +114,7 @@ export default {
         cubePopType = "permutationLayers"
       }
       id -= 1
-      window.open("http://localhost:63342/cube/gancubeDemo/2.html?cubePopType="+cubePopType+"&cubePopId="+id, '', 'width=1000,height=400,menubar=no,toolbar=no,status=no,scrollbars=yes')
+      window.open("gancubeDemo/2.html?cubePopType="+cubePopType+"&cubePopId="+id, '', 'width=1000,height=400,menubar=no,toolbar=no,status=no,scrollbars=yes')
     }
   },
   computed: {
