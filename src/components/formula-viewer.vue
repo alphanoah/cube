@@ -12,7 +12,7 @@
         <div class="modal-body">
           <div class="formula-detail">
             <div class="f-img">
-              <img :src="`src/assets/images/${ value.image }`" alt="">
+              <img :src="`images/${ value.image }`" alt="">
             </div>
             <span class="f-code" v-html="value.html"></span>
           </div>

@@ -50,7 +50,7 @@
         >
           <div class="orderNum">{{ (element.id < 10 ? '0' : '') + element.id }}</div>
           <div class="exampleImg">
-            <img :src="`src/assets/images/${ element.image }`" alt="">
+            <img :src="`images/${ element.image }`" alt="">
           </div>
           <div class="codeText">
             <p v-html="element.html"></p>

@@ -3,7 +3,7 @@
     <div class="intro flex">
       <div class="unit">
         <div class="logo">
-          <img src="../assets/images/intro/img1.png" alt="">
+          <img src="../../public/images/intro/img1.png" alt="">
         </div>
       </div>
       <div class="unit" v-for="item in commonData.desc" v-html="item"></div>
@@ -15,7 +15,7 @@
             {{ item }}
           </p>
           <div class="imgArea">
-            <img v-for="item2 in value.images" :src="`src/assets/images/${ item2 }`" alt="">
+            <img v-for="item2 in value.images" :src="`images/${ item2 }`" alt="">
           </div>
         </div>
       </div>
