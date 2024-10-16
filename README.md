@@ -1,5 +1,14 @@
 # 3x3x3 Rubik's Cube
 
+## Instruction
+
+This project was created when I was learning the popular speed-solving method CFOP for the 3x3 Rubik’s Cube as a beginner.
+
+## Visit
+
+This project is already running on Github Pages. You can visit this [link](https://alphanoah.github.io/cube/).
+
+
 ## Start
 
 ```shell
