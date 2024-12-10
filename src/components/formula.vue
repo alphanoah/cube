@@ -18,6 +18,7 @@
         </div>
       </div>
       <div class="unit desc">
+        说明<br/>
         <template v-for="value in formulaData.desc">
           {{ value }} <br/>
         </template>
@@ -65,7 +66,8 @@
                     data-bs-title="Copy to clipboard">
               <i class="bi bi-clipboard"></i>
             </button>
-            <button class="btn btn-outline-dark btn-zoom-in" type="button" @click="showGan(formulaData.abbr,element.id)">
+            <button class="btn btn-outline-dark btn-zoom-in" type="button"
+                    @click="showGan(formulaData.abbr,element.id)">
               <i class="bi bi-zoom-in"></i>
             </button>
           </div>
@@ -102,19 +104,19 @@ export default {
     sort() {
       this.formulaData.formula = this.formulaData.formula.sort((a, b) => a.id - b.id);
     },
-    showGan(abbr,id){
+    showGan(abbr, id) {
       let cubePopType = "First2LayerSticker"
-      if (abbr === "F2L"){
+      if (abbr === "F2L") {
         cubePopType = "First2LayerSticker"
       }
-      if (abbr === "OLL"){
+      if (abbr === "OLL") {
         cubePopType = "orientationLayers"
       }
-      if (abbr === "PLL"){
+      if (abbr === "PLL") {
         cubePopType = "permutationLayers"
       }
       id -= 1
-      window.open("gancubeDemo/2.html?cubePopType="+cubePopType+"&cubePopId="+id, '', 'width=1000,height=400,menubar=no,toolbar=no,status=no,scrollbars=yes')
+      window.open("gancubeDemo/2.html?cubePopType=" + cubePopType + "&cubePopId=" + id, '', 'width=1000,height=400,menubar=no,toolbar=no,status=no,scrollbars=yes')
     }
   },
   computed: {
